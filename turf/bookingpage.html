@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Booking</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="turf/style.css">  
+</head>
+<body>
+    <h1>Book a Turf </h1>
+    <form action="#" method="post">
+        <label for="Turfs">Choose a Turf:</label>
+        <select name="Turfs" id="Turfs">
+            <option value="AlphaLoop Sports">AlphaLoop Sports</option>
+            <option value="Criczone Sports">Criczone Sports</option>
+            <option value="Sector9 Sports">Sector9 Sports</option>
+        </select>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="number">Your Phone Number:</label>
+        <input type="number" id="phone" name="phone" required>
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="preferred_date" required>
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="preferred_time" required>
+        <!-- Add more fields as needed -->
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

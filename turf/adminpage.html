@@ -19,6 +19,10 @@
                 </div>        
             </div>
             
+            <div style="text-align: center;">
+                <h3>Admin Dashboard</h3>
+            </div>
+
             <div class="menu-bar">
                 <ul>
                     <li><a href="#">Manage Turf</a></li>
@@ -30,7 +34,35 @@
         
         <h1 class="quote"> !! The Turf Ground is one shot solution for all sports
             with limited area and unlimited joy. !!</h1>
+
+        <div class="bookings">
+            <h2>Manage Bookings</h2>
+            <button onclick="viewBooking()">View Booking</button>
+            <button onclick="editBooking()">Edit Booking</button>
+            <button onclick="deleteBooking()">Delete Booking</button>
+        </div>
         
+        <div class="manageturf">
+            <h2>Manage Turf</h2>
+
+            <button onclick="viewTurf()">View Turf</button>
+            <button onclick="deleteTurf()">Delete Turf</button>
+            <button onclick="addTurf()">Add new Turf</button>
+
+            <div style="margin-top: 10px;">
+                <form id="addTurf">
+                    <label for="TurfName">Turf Name:</label>
+                    <input type="text" id="TurfName" name="TurfName" required>
+                    <label for="Location">Location:</label>
+                    <input type="text" id="Location" name="Location" required>
+                    <label for="Price">Price:</label>
+                    <input type="number" id="Price" name="Price" required>
+                    <button type="submit">Add Turf</button>
+                </form>
+            </div>
+
+        </div>
+
         <footer>
             <h1 class="credit1"> Created and &copy; 2024 by <span> Prince Singh </span> | all rights reserved! </h1>
         </footer>

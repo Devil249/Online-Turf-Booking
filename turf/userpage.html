@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Turf Booking Application</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">   
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./middlewares.js"></script>
+  </head>
+  <script>
+    validatelogin();
+  </script>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img src="http://localhost/turfbooking/images/pitch.png" height="24px" width="24px" />
+        </div>
+        <div>
+          <h2>Turf Booking</h2>
+        </div>
+      </div>
 
-<body>
-<header>
-    <div class="logo">
-        <div>
-        <img src="/images/pitch.png" height="24px" width="24px">
-        </div> 
-        <div>
-            <h2>Turf Booking</h2> 
-        </div>        
-    </div>
-    
-    <div class="menu-bar">
+      <div class="menu-bar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Orders</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Orders</a></li>
         </ul>
-    </div>
+      </div>
+    </header>
 
-</header>
+    <h1 class="quote"> !! The Turf Ground is one shot solution for all sports
+      with limited area and unlimited joy. !!</h1>
 
-<section class="Home">
-    <div class="box" style="background: url(/images/img2.jpg);">
+    <section class="Home">
+      <div class="box" style="background: url(http://localhost/turfbooking/images/img2.jpg)">
         <div class="content">
-            <span>The Turf Ground is</span>
-            <h3>one shot solution for all sports</h3>
-            <span>with limited area and unlimited joy</span>
+          <span>The Turf Ground is</span>
+          <h3>one shot solution for all sports</h3>
+          <span>with limited area and unlimited joy</span>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="turf">
-    <div class="box-container">
+    <section class="turf">
+      <div class="box-container">
         <div class="box">
-            <img src="/images/img3.png" alt="">
-            <h3>AlphaLoop Sports</h3>
-            <a href="/turf/bookingpage.html" class="btn">Book Now</a>
-        </div>
-
-        <div class="box">
-            <img src="/images/img4.png" alt="">
-            <h3>Criczone Sports</h3>
-            <a href="/turf/bookingpage.html" class="btn">Book Now</a>
+          <img src="http://localhost/turfbooking/images/img3.png" alt="" />
+          <h3>AlphaLoop Sports</h3>
+          <a href="http://localhost/turfbooking/turf/bookingpage.html" class="btn">Book Now</a>
         </div>
 
         <div class="box">
-            <img src="/images/img5.png" alt="">
-            <h3>Sector9 Sports</h3>
-            <a href="/turf/bookingpage.html" class="btn">Book Now</a>
+          <img src="http://localhost/turfbooking/images/img4.png" alt="" />
+          <h3>Criczone Sports</h3>
+          <a href="http://localhost/turfbooking/turf/bookingpage.html" class="btn">Book Now</a>
         </div>
 
-    </div>
-</section>
+        <div class="box">
+          <img src="http://localhost/turfbooking/images/img5.png" alt="" />
+          <h3>Sector9 Sports</h3>
+          <a href="http://localhost/turfbooking/turf/bookingpage.html" class="btn">Book Now</a>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <h1 class="credit">
+        Created and &copy; 2024 by
+        <span>Prince Singh</span>
+        | all rights reserved!
+      </h1>
+    </footer>
 
-<footer>
-    <h1 class="credit"> Created and &copy; 2024 by <span> Prince Singh </span> | all rights reserved! </h1>
-</footer>
-
-<script src="./script.js"></script>
-</body>  
+    <script src="./script.js"></script>
+  </body>
 </html>
+

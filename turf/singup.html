@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
+  <head>
     <title>Sign Up</title>
     <link rel="stylesheet" href="./login1.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="signup-box">
       <h1>Sign Up</h1>
       <h4>It's free and only takes a minute</h4>
       <form>
-        <label>First Name</label>
-        <input type="text" placeholder="" />
-        <label>Last Name</label>
-        <input type="text" placeholder="" />
+        <label>Name</label>
+        <input type="text" placeholder="" id="reguser" />
         <label>Email</label>
-        <input type="email" placeholder="" />
+        <input type="email" placeholder="" id="regemail" />
         <label>Password</label>
-        <input type="password" placeholder="" />
+        <input type="password" placeholder="" id="regpass" />
         <label>Confirm Password</label>
-        <input type="password" placeholder="" />
-        <input type="button" value="Sign Up" />
+        <input type="password" placeholder="" id="regconfirmPass" />
+        <input type="button" value="Sign Up" onclick="register()" />
       </form>
       <p>
-        By clicking the Sign Up button,you agree to our <br />
-        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+        By clicking the Sign Up button,you agree to our
+        <br />
+        <a href="#">Terms and Condition</a>
+        and
+        <a href="#">Policy Privacy</a>
       </p>
     </div>
     <p class="para-2">
-      Already have an account? <a href="./login.html">Login here</a>
+      Already have an account?
+      <a href="./login.html">Login here</a>
     </p>
 
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
+

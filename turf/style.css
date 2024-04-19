@@ -1,8 +1,8 @@
-body{
+body {
 	background-color: rgb(240, 228, 228);
 }
 
-header{
+header {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -14,48 +14,48 @@ header{
 	padding-bottom: 5px;
 }
 
-.logo{
-	display:inline-flex
+.logo {
+	display: inline-flex
 }
 
-.logo h2{
+.logo h2 {
 	margin: 2px;
 	color: beige;
 }
 
-.menu-bar ul{
+.menu-bar ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.menu-bar li{
+.menu-bar li {
 	display: inline-block;
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
-.menu-bar a{
+.menu-bar a {
 	text-decoration: none;
 	font-size: larger;
 	font-weight: bold;
-	
+
 }
 
-.icons{
+.icons {
 	margin-right: 5px;
 }
 
-.icons a{
+.icons a {
 	font-size: large;
 	color: rgb(98, 97, 97);
-	text-decoration: none;	
+	text-decoration: none;
 }
 
-.Home{
+.Home {
 	padding: 2px;
 }
 
-.box{
+.box {
 	background-size: cover !important;
 	background-position: center !important;
 	margin-top: 2px;
@@ -65,90 +65,115 @@ header{
 	position: relative;
 }
 
-.content{
+.content {
 	font-size: large;
 	font-weight: bold;
 	position: absolute;
-  	top:30%; left: 1%;
-  	transform: translateY(-40%);
-  	max-width: 40rem;
+	top: 30%;
+	left: 1%;
+	transform: translateY(-40%);
+	max-width: 40rem;
 	color: rgb(22, 1, 1);
 }
 
-.content span{
+.content span {
 	font-size: larger;
 	font-style: italic;
 	font-weight: bolder;
 }
 
-.turf .box-container{
+.turf .box-container {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 	gap: 5px;
 }
 
-.turf .box-container .box{
-	flex:1 1 30rem;
-	border:.1rem solid rgba(0,0,0,.3);
-	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+.turf .box-container .box {
+	flex: 1 1 30rem;
+	border: .1rem solid rgba(0, 0, 0, .3);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 }
 
-.turf .box-container .box img{
+.turf .box-container .box img {
 	height: 20rem;
-	width:100%;
-	border-bottom:.1rem solid rgba(0,0,0,.3);
+	width: 100%;
+	border-bottom: .1rem solid rgba(0, 0, 0, .3);
 	object-fit: cover;
 }
 
-.turf .box-container .box a{
+.turf .box-container .box a {
 	font-size: large;
 	color: rgb(98, 97, 97);
 	text-decoration: none;
 }
 
-.turf .box-container .box h3{
+.turf .box-container .box h3 {
 	margin: 2px;
-	border-bottom: .1rem solid rgba(0,0,0,.3);
+	border-bottom: .1rem solid rgba(0, 0, 0, .3);
 }
 
-.credit{
+.credit {
 	background-color: bisque;
-    text-align: center;
-	color:#f9004d;
+	text-align: center;
+	color: #f9004d;
 	padding-top: 10px;
 	padding-bottom: 5px;
 	font-size: 16px;
 }
 
-.credit1{
-	position:fixed;
+.credit1 {
+	position: fixed;
 	width: 100%;
 	bottom: -8px;
 	background-color: bisque;
-    text-align: center;
-	color:#f9004d;
+	text-align: center;
+	color: #f9004d;
 	padding-top: 10px;
 	padding-bottom: 5px;
 	font-size: 16px;
 }
 
-.quote{
+.quote {
 	background-color: rgba(153, 241, 81, 0.86);
-    text-align: center;
-	color:#f90000;
+	text-align: center;
+	color: #f90000;
 	margin-top: 5px;
+	margin-bottom: 5px;
 	padding-top: 5px;
+	padding-bottom: 3px;
 	font-size: 20px;
 }
 
-.bookings{
-	display: none;
+.bookings {
+	display: block;
+	margin-left: 15%;
+	margin-bottom: 25px;
 }
 
-.manageturf{
-	display: none;
+.manageturf {
+	display: block;
+	margin-left: 15%;
+}
+
+.bookingInputs {
+	padding-right: 0.7rem;
+	padding-left: 0.7rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: large;
+	margin-bottom: 0.8rem;
+}
+
+input {
+	padding: 5px 5px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+form button {
+	margin: 15px 30px;
 }

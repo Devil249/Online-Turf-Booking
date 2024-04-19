@@ -12,7 +12,7 @@
         <header>
             <div class="logo">
                 <div>
-                <img src="/images/pitch.png" height="24px" width="24px">
+                <img src="http://localhost/turfbooking/images/pitch.png" height="24px" width="24px">
                 </div> 
                 <div>
                     <h2>Turf Booking</h2> 
@@ -25,8 +25,8 @@
 
             <div class="menu-bar">
                 <ul>
-                    <li><a href="#">Manage Turf</a></li>
-                    <li><a href="#">Manage Bookings</a></li>
+                    <li><a href="#bookings">Manage Turf</a></li>
+                    <li><a href="#manageturf">Manage Bookings</a></li>
                 </ul>
             </div>
 
@@ -47,17 +47,19 @@
 
             <button onclick="viewTurf()">View Turf</button>
             <button onclick="deleteTurf()">Delete Turf</button>
-            <button onclick="addTurf()">Add new Turf</button>
 
             <div style="margin-top: 10px;">
                 <form id="addTurf">
                     <label for="TurfName">Turf Name:</label>
                     <input type="text" id="TurfName" name="TurfName" required>
+                    <br>
                     <label for="Location">Location:</label>
                     <input type="text" id="Location" name="Location" required>
+                    <br>
                     <label for="Price">Price:</label>
                     <input type="number" id="Price" name="Price" required>
-                    <button type="submit">Add Turf</button>
+                    <br>
+                    <button type="submit" onclick="addTurf()">Add new Turf</button>
                 </form>
             </div>
 

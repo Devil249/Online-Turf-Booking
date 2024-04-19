@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slot Booking</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/turf/style.css">  
-</head>
-<body>
-    <h1>Book a Turf </h1>
-    <form action="#" method="post">
-        <label for="Turfs">Choose a Turf:</label>
-        <select name="Turfs" id="Turfs">
-            <option value="AlphaLoop Sports">AlphaLoop Sports</option>
-            <option value="Criczone Sports">Criczone Sports</option>
-            <option value="Sector9 Sports">Sector9 Sports</option>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <script src="./middlewares.js"></script>
+    <script>
+      validatelogin();
+    </script>
+  </head>
+  <body>
+    <h1>Book a Turf</h1>
+    <span id="name">Hii,</span>
+    <form action="#" method="post" style="display: flex; flex-direction: column; max-width: 30rem; width: 100%; padding: 20px; margin: auto; font-size: x-large">
+      <label for="Turfs">Choose a Turf:</label>
+      <select name="Turfs" id="Turfs" class="bookingInputs">
+        <option value="AlphaLoop Sports">AlphaLoop Sports</option>
+        <option value="Criczone Sports">Criczone Sports</option>
+        <option value="Sector9 Sports">Sector9 Sports</option>
+      </select>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required class="bookingInputs" />
+      <label for="number">Your Phone Number:</label>
+      <input type="number" id="phone" name="phone" required class="bookingInputs" />
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="preferred_date" required class="bookingInputs" />
+      <label for="time">Preferred Time:</label>
+      <div class="">
+        <span>From :</span>
+        <select name="startBookTime" id="startBookTime" class="bookingInputs">
+          <option value="4">4:00 AM</option>
+          <option value="5">5:00 AM</option>
+          <option value="6">6:00 AM</option>
+          <option value="7">7:00 AM</option>
+          <option value="8">8:00 AM</option>
+          <option value="9">9:00 AM</option>
+          <option value="10">10:00 AM</option>
+          <option value="11">11:00 AM</option>
+          <option value="12">12:00 PM</option>
+          <option value="13">1:00 PM</option>
+          <option value="14">2:00 PM</option>
+          <option value="15">3:00 PM</option>
+          <option value="16">4:00 PM</option>
+          <option value="17">5:00 PM</option>
+          <option value="18">6:00 PM</option>
+          <option value="19">7:00 PM</option>
+          <option value="20">8:00 PM</option>
+          <option value="21">9:00 PM</option>
+          <option value="22">10:00 PM</option>
         </select>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="number">Your Phone Number:</label>
-        <input type="number" id="phone" name="phone" required>
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="preferred_date" required>
-        <label for="time">Preferred Time:</label>
-        <input type="time" id="time" name="preferred_time" required>
-        <!-- Add more fields as needed -->
-        <button type="submit">Book Now</button>
+      </div>
+      <div class="">
+        <span>To :</span>
+        <select name="endBookTime" id="endbooktime" class="bookingInputs">
+          <option value="5">5:00 AM</option>
+          <option value="6">6:00 AM</option>
+          <option value="7">7:00 AM</option>
+          <option value="8">8:00 AM</option>
+          <option value="9">9:00 AM</option>
+          <option value="10">10:00 AM</option>
+          <option value="11">11:00 AM</option>
+          <option value="12">12:00 PM</option>
+          <option value="13">1:00 PM</option>
+          <option value="14">2:00 PM</option>
+          <option value="15">3:00 PM</option>
+          <option value="16">4:00 PM</option>
+          <option value="17">5:00 PM</option>
+          <option value="18">6:00 PM</option>
+          <option value="19">7:00 PM</option>
+          <option value="20">8:00 PM</option>
+          <option value="21">9:00 PM</option>
+          <option value="22">10:00 PM</option>
+          <option value="23">11:00 PM</option>
+        </select>
+      </div>
+      <button type="button" style="padding: 1rem" onclick="submitBooking()">Book Now</button>
     </form>
 
-    <script src="/turf/script.js"></script>
-</body>
+    <script src="./script.js"></script>
+    <script>
+      $("#name").innerHTML = "Hii " + getCookieByName("userName");
+    </script>
+  </body>
 </html>
+
